@@ -1,5 +1,11 @@
 # 湖南大学硕士学位论文 LaTeX 模板
 
+forked from [yusanshi/hnuthesis](https://github.com/yusanshi/hnuthesis)
+
+优化：
+1、直接添加了对应的字体文件
+2、添加 macOS 的使用方式
+
 [![Compile and publish the release](https://github.com/yusanshi/hnuthesis/actions/workflows/main.yml/badge.svg)](https://github.com/yusanshi/hnuthesis/actions/workflows/main.yml) [![GitHub Releases](https://img.shields.io/github/v/release/yusanshi/hnuthesis)](https://github.com/yusanshi/hnuthesis/releases/latest)
 
 本项目是湖南大学硕士学位论文 LaTeX 模板 hnuthesis，按照《[湖南大学研究生学位论文撰写规范](http://gra.hnu.edu.cn/info/1276/3444.htm)》的要求编写（**个人能力、精力有限，不保证完全符合规范，_Use at your own risk!_**）。
@@ -24,9 +30,11 @@
 
 ### 1. 个人设备
 
+#### Windows 以及 Linux
+
 1. 安装 LaTeX 发行版；
 
-2. 对于非 Windows 系统，需要额外安装字体，以 Debian/Ubuntu 为例：
+2. 对于Linux系统，需要额外安装字体，以 Debian/Ubuntu 为例：
 
    ```bash
    sudo apt-get update
@@ -40,6 +48,7 @@
    mkdir -p ~/.local/share/fonts && mv simfonts ~/.local/share/fonts
    fc-cache -f
    ```
+
 
 3. 编译主版本：
 
@@ -56,6 +65,12 @@
    ```
 
    > 注意：脚本的运行需要 Unix style 的命令行环境，对于 Windows 用户，可以使用安装完 Git 客户端之后的 Git Bash。
+
+#### macOS
+
+> 参考：https://zhuanlan.zhihu.com/p/560361957
+
+2. 安装对应的字体，参考文件中的 `SimFonts.tar.gz`；
 
 ### 2. Overleaf
 

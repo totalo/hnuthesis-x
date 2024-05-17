@@ -46,7 +46,7 @@
 % 答辩委员会主席
 \chair{待定}
 
-\begin{document}
+\usepackage[export]{adjustbox} \begin{document}
 % 封面、原创性声明
 \maketitle
 
@@ -55,8 +55,18 @@
 % 目录
 \tableofcontents
 % 插图附表索引
-\listoffigures
-\listoftables
+\begingroup
+    \renewcommand*{\addvspace}[1]{}
+        \phantomsection
+        \addcontentsline{toc}{chapter}{\listfigurename}
+        \listoffigures
+        \newpage
+
+        \phantomsection
+        \addcontentsline{toc}{chapter}{\listtablename}
+        \listoftables
+        \newpage
+\endgroup
 
 % 正文章节
 \mainmatter

@@ -2,6 +2,8 @@
 
 forked from [yusanshi/hnuthesis](https://github.com/yusanshi/hnuthesis)
 
+由于原作者不提供维护，所以 fork 了一个仓库，持续维护，欢迎大家提 issue 和 PR。
+
 优化：
 1、直接添加了对应的字体文件
 2、添加 macOS 的使用方式
